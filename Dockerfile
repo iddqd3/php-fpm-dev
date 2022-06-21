@@ -12,6 +12,7 @@ ADD https://github.com/mlocati/docker-php-extension-installer/releases/latest/do
 
 RUN chmod +x /usr/local/bin/install-php-extensions && \
     install-php-extensions intl apcu opcache memcached igbinary pdo_mysql mysqli gearman mcrypt && \
+    install-php-extensions zip  && \
     install-php-extensions mongodb  && \
     install-php-extensions xdebug && \
     install-php-extensions xhprof
